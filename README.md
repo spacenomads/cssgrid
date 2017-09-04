@@ -2,9 +2,10 @@
 Introducción a CSS GRID
 
 **Puntos**
+* Qué es CSS GRID y por qué mola
 * Qué necesitamos
-* <strong>grid-template-···
-* <strong>grid-···-gap
-* <strong>grid-auto-···
-* <strong>Posicionando elementos
+* grid-template-···
+* grid-···-gap
+* grid-auto-···
+* Posicionando elementos
 * Recursos
