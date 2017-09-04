@@ -164,6 +164,7 @@ grid-template-columns: minmax(auto, 50%) 1fr 3em;
 grid-template-areas: "header header" "content sidebar" "footer footer";
 
 							</pre>
+							<p><a href="codepen.io/oneeyedman/pen/WEmRdj" target="_blank">Base CSS GRID en Codepen, yay!</a></p>
 						</div>
 					</div>
 				</section>
@@ -189,83 +190,40 @@ grid-gap: 20px;
 						<div class="text-subtitle">Estilos del contenedor GRID</div>
 						<h2><strong>grid-auto-···</strong></h2>
 						<div class="content-center">
-							<p>Marca cómo se van a alinear los elementos en el eje principal.</p>
+							<p>Establece los valores por defecto para columnas o filas en caso de que se necesiten más de las definidas.</p>
+							<p>Además puedes marcar la dirección principal del elemento GRID</p>
 							<pre>
-justify-content: flex-start; /*default*/
-justify-content: flex-end;
-justify-content: center;
-justify-content: space-between;
-justify-content: space-around;
+grid-auto-rows: 100px;
+grid-auto-columns: 110px;
+grid-auto-flow: row | columns
 							</pre>
 						</div>
 					</div>
 				</section>
 				<section>
 					<div class="wrap aligncenter">
-						<div class="text-subtitle">Estilos del contenedor flex</div>
-						<h2><strong>align-items</strong></h2>
+						<div class="text-subtitle">Estilos del item GRID</div>
+						<h2><strong>Posicionando elementos</strong></h2>
 						<div class="content-center">
-							<p>Marca cómo se van a alinear los elementos en el eje secundario.</p>
+							<p>Marca cómo se va a posicionar un elemento en nuestra rejilla.</p>
 							<pre>
-align-items: flex-start;
-align-items: flex-end;
-align-items: center;
-align-items: stretch; /*default*/
-							</pre>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="wrap aligncenter">
-						<div class="text-subtitle">Estilos del contenedor flex</div>
-						<h2><strong>align-content</strong></h2>
-						<div class="content-center">
-							<p>Define cómo se va a distribuir el espacio extra del eje secundario :)</p>
-							<pre>
-align-content: flex-start;
-align-content: flex-end;
-align-content: center;
-align-content: space-between;
-align-content: space-around;
-align-content: stretch; /*default*/
-							</pre>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="wrap aligncenter">
-						<div class="text-subtitle">Estilos del elemento flex</div>
-						<h2><strong>align-self</strong></h2>
-						<div class="content-center">
-							<p>Es un align-items para 1 elemento.</p>
-							<pre>
-align-self: flex-start;
-align-self: flex-end;
-align-self: center;
-align-self: stretch; /*default*/
-							</pre>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="wrap aligncenter">
-						<div class="text-subtitle">Estilos del elemento flex</div>
-						<h2><strong>flex [grow/shrink/basis]</strong></h2>
-						<div class="content-center">
-							<p>Marca cómo van a adaptarse los elementos al eje principal por defecto, si sobra espacio o si falta.</p>
-							<pre>
-flex-grow: 0;
-flex-shrink: 1;
-flex-basis: auto;
+grid-column-start: 2;
+grid-column-end: 3;
 
-flex: 0 1 auto;
+grid-row-start: 1;
+grid-row-end: 4;
+
+grid-row: 1 / 4;
+grid-column: 2 / 3;
+
+grid-row: 2 / span 3;
+grid-column: span 3;
 							</pre>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
 						<h2>Recursos</h2>
 						<div class="content-center size-60">
@@ -274,22 +232,11 @@ flex: 0 1 auto;
 							<div>
 								<h2>
 									<svg class="fa-asterisk">
-										<use xlink:href="#fa-asterisk"></use>
+										<use xlink:href="#fa-link"></use>
 									</svg>
-									<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><strong>A Complete Guide to Flexbox | CSS Tricks</strong></a>
+									<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><strong>http://learncssgrid.com</strong></a>
 								</h2>
-								Es casi el post de referencia sobre flexbox.
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>
-									<svg class="fa-play-circle-o">
-										<use xlink:href="#fa-play-circle-o"></use>
-									</svg>
-									<a href="https://flexbox.io" target="_blank"><strong>Flexbox.io</strong></a>
-								</h2>
-								Mini curso de 20 vídeos con ejercicios.
+								Un guía de aprendizaje.
 							</div>
 						</li>
 					</ul>
