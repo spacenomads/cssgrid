@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+		<title>CSS GRID</title>
+		<meta name="description" content="Pequeño guión de introducción a CSS GRID">
+
+		<!-- URL CANONICAL -->
+		<!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+		<!-- CSS Base -->
+		<link rel="stylesheet" type='text/css' media='all' href="static/css/base.css">
+
+		<!-- CSS Colors -->
+		<link rel="stylesheet" type='text/css' media='all' href="static/css/colors.css">
+
+		<!-- Optional - CSS SVG Icons (Font Awesome) -->
+		<link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+		<!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+		<!-- TWITTER -->
+		<meta name="twitter:card" content="Soy 7 veces más tuerto que tu">
+		<meta name="twitter:site" content="@spacenomads"> <!-- EDIT -->
+		<meta name="twitter:creator" content="@oneeyedman"> <!-- EDIT -->
+		<meta name="twitter:title" content="Introducción a CSS GRID"> <!-- EDIT -->
+		<meta name="twitter:description" content="I 🦄 CSS GRID"> <!-- EDIT -->
+		<meta name="twitter:image" content="static/images/share-image.png"> <!-- EDIT -->
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+		<link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+		<link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+		<link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+		<link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+		<link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+		<link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+		<!-- Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#333333">
+
+	</head>
+	<body>
+		<header role="banner">
+			<nav role="navigation">
+				<p class="logo"><a href="index.html" title="CSS GRID">CSS GRID</a></p>
+				<ul>
+					<li class="web">
+						<a rel="external" href="https://spacenomads.com" title="Website">
+							<svg class="fa-link">
+								<use xlink:href="#fa-link"></use>
+							</svg>
+							<em>Space Nomads</em>
+						</a>
+					</li>
+					<li class="twitter">
+						<a rel="external" href="https://twitter.com/oneeyedman" title="Twitter">
+							<svg class="fa-twitter">
+								<use xlink:href="#fa-twitter"></use>
+							</svg>
+							<em>@oneeyedman</em>
+						</a>
+					</li>
+					<li class="dribbble"><a rel="external" href="http://dribbble.com/oneeyedman" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>OneEyedMan</em></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			<article id="webslides">
+
+				<section>
+					<span class="background" style=""></span>
+					<div class="wrap aligncenter">
+						<h1><strong>Introducción a CSS GRID</strong></h1>
+						<p class="text-intro">I 🦄 CSS GRID</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="wrap aligncenter">
+						<img src="static/images/chuck.jpg" alt="" class="avatar-200"><br>
+						<h2><strong>Hola, soy Carlos</strong></h2>
+						<p class="text-intro">Soy diseñador y maquetador en <a href="http://spacenomads.com">Space Nomads</a></p>
+						<ul class="flexblock metricks border aligncenter">
+							<li>
+									<h2 style="font-weight: normal">
+										<span>
+											<svg class="fa-twitter">
+												<use xlink:href="#fa-twitter"></use>
+											</svg>
+										</span>&nbsp;&nbsp;<a href="https://twitter.com/oneeyedman">@oneeyedman</a>
+									</h2>
+							</li>
+							<li>
+								<h2 style="font-weight: normal;">
+								<span>
+									<svg class="fa-envelope">
+										<use xlink:href="#fa-envelope"></use>
+									</svg>
+								</span>&nbsp;&nbsp;<a href="mailto:carlos@spacenomads.com">carlos@spacenomads.com</a>
+								</h2>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="wrap aligncenter">
+							<h2>Qué es CSS GRID y por qué mola</h2>
+							<p>CSS GRID o GRID es el primer sistema dedicado a resolver estructuras complejas de rejillas o grids. Bueno, complijas y no tan complejas ;)</p>
+					</div>
+
+				</section>
+
+				<section>
+					<div class="wrap aligncenter">
+						<h2>Qué necesitamos</h2>
+						<div class="grid">
+							<div class="column">
+								<h3>HTML</h3>
+								<pre>
+&lt;div class="container"&gt;
+	&lt;div class="item"&gt;1&lt;/div&gt;
+	&lt;div class="item"&gt;2&lt;/div&gt;
+	&lt;div class="item"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+								</pre>
+							</div>
+							<div class="column">
+								<h3>CSS</h3>
+								<pre>
+.container {
+	display: grid | inline-grid | subgrid;
+}
+								</pre>
+							</div>
+						</div>
+
+					</div>
+					<!-- .end .wrap -->
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del contenedor GRID</div>
+						<h2><strong>grid-template-···</strong></h2>
+						<div class="content-center">
+							<p>Establece la rejilla</p>
+							<pre>
+grid-template-rows: 150px 1fr 100px;
+grid-template-columns: 1fr 200px;
+
+grid-template-rows: repeat(4, 100px);
+grid-template-columns: minmax(auto, 50%) 1fr 3em;
+
+grid-template-areas: "header header" "content sidebar" "footer footer";
+
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del contenedor GRID</div>
+						<h2><strong>grid-···-gap</strong></h2>
+						<div class="content-center">
+							<p>Define el espaciado entre columnas y filas.</p>
+							<pre>
+grid-row-gap: 20px;
+grid-column-gap: 5rem;
+
+grid-gap: 5% 10%;
+grid-gap: 20px;
+							</pre>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del contenedor GRID</div>
+						<h2><strong>grid-auto-···</strong></h2>
+						<div class="content-center">
+							<p>Marca cómo se van a alinear los elementos en el eje principal.</p>
+							<pre>
+justify-content: flex-start; /*default*/
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del contenedor flex</div>
+						<h2><strong>align-items</strong></h2>
+						<div class="content-center">
+							<p>Marca cómo se van a alinear los elementos en el eje secundario.</p>
+							<pre>
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: stretch; /*default*/
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del contenedor flex</div>
+						<h2><strong>align-content</strong></h2>
+						<div class="content-center">
+							<p>Define cómo se va a distribuir el espacio extra del eje secundario :)</p>
+							<pre>
+align-content: flex-start;
+align-content: flex-end;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+align-content: stretch; /*default*/
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del elemento flex</div>
+						<h2><strong>align-self</strong></h2>
+						<div class="content-center">
+							<p>Es un align-items para 1 elemento.</p>
+							<pre>
+align-self: flex-start;
+align-self: flex-end;
+align-self: center;
+align-self: stretch; /*default*/
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="wrap aligncenter">
+						<div class="text-subtitle">Estilos del elemento flex</div>
+						<h2><strong>flex [grow/shrink/basis]</strong></h2>
+						<div class="content-center">
+							<p>Marca cómo van a adaptarse los elementos al eje principal por defecto, si sobra espacio o si falta.</p>
+							<pre>
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+
+flex: 0 1 auto;
+							</pre>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<!--.wrap = container (width: 90%) -->
+					<div class="wrap aligncenter">
+						<h2>Recursos</h2>
+						<div class="content-center size-60">
+					<ul class="flexblock specs">
+						<li>
+							<div>
+								<h2>
+									<svg class="fa-asterisk">
+										<use xlink:href="#fa-asterisk"></use>
+									</svg>
+									<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><strong>A Complete Guide to Flexbox | CSS Tricks</strong></a>
+								</h2>
+								Es casi el post de referencia sobre flexbox.
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>
+									<svg class="fa-play-circle-o">
+										<use xlink:href="#fa-play-circle-o"></use>
+									</svg>
+									<a href="https://flexbox.io" target="_blank"><strong>Flexbox.io</strong></a>
+								</h2>
+								Mini curso de 20 vídeos con ejercicios.
+							</div>
+						</li>
+					</ul>
+					</div>
+
+					<!-- .end .wrap -->
+				</section>
+				<section>
+					<!--.wrap = container (width: 90%) -->
+					<div class="wrap aligncenter">
+						<h2><strong>¿Dudas?</strong></h2>
+					</div>
+					<!-- .end .wrap -->
+				</section>
+				<section class="bg-black-blue">
+					<!--.wrap = container (width: 90%) -->
+					<div class="wrap aligncenter">
+						<h1><strong style="font-size:3em;">:)</strong></h1>
+					</div>
+					<!-- .end .wrap -->
+				</section>
+
+
+
+			</article>
+			<!-- end article -->
+		</main>
+		<!-- end main -->
+
+	 <!-- A global footer
+
+		 <footer role="contentinfo">
+			<div class="wrap">
+				<p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+			</div>
+		</footer>  -->
+
+		<!-- Required -->
+		<script src="static/js/webslides.js"></script>
+		<script>
+			window.ws = new WebSlides();
+		</script>
+
+		<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+		<script defer src="static/js/svg-icons.js"></script>
+
+	</body>
+</html>
