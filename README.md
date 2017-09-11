@@ -12,4 +12,4 @@ Introducción a CSS GRID
 ** Recursos **
 * [learncssgrid.com](http://learncssgrid.com)
 * [Codepen para empezar](https://codepen.io/oneeyedman/pen/WEmRdj)
-* [Un codepen un poco más complicado](codepen.io/oneeyedman/pen/oGvwae)
+* [Un codepen un poco más complicado](http://codepen.io/oneeyedman/pen/oGvwae)
