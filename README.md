@@ -8,4 +8,6 @@ Introducción a CSS GRID
 * grid-···-gap
 * grid-auto-···
 * Posicionando elementos
-* Recursos
+
+** Recursos **
+* [learncssgrid.com](http://learncssgrid.com)
